@@ -1,58 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back"
-    android:weightSum="12">
+    android:background="@drawable/back">
+
 
     <ImageView
-        android:layout_width="230dp"
-        android:layout_height="match_parent"
+        android:layout_width="267dp"
+        android:layout_height="720dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:layout_weight="6"/>
-
+        android:layout_weight="1"
+        android:src="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="773dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:weightSum="12"
-        android:layout_weight="6"
-        android:layout_marginTop="60dp">
+        android:weightSum="12">
 
         <Button
             android:id="@+id/button_siren"
-            android:layout_width="227dp"
-            android:layout_height="61dp"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_color_drawble"
             android:text="사이렌"
-            android:textSize="25sp" />
+            android:textSize="29sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFB6C1	 " />
 
         <Button
             android:id="@+id/button_police"
-            android:layout_width="227dp"
-            android:layout_height="61dp"
+            android:layout_width="283dp"
+            android:layout_height="58dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_weight="1"
+            android:background="@drawable/button_color_drawble"
             android:text="신고"
-            android:textSize="25sp"
-            android:background="@drawable/button_color_drawble"/>
+            android:textSize="29sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFB6C1	 " />
 
         <Button
             android:id="@+id/button_first"
-            android:layout_width="274dp"
-            android:layout_height="61dp"
+            android:layout_width="283dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:background="@drawable/button_color_drawble"
             android:text="공공시설 위치조회"
-            android:textSize="23sp"/>
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFB6C1	 " />
     </LinearLayout>
 
 </LinearLayout>
