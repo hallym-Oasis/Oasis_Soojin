@@ -34,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_first);
 
         btn_play = findViewById(R.id.button_siren);
-        btn_play.setOnClickListener(view -> {
-            mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.siren);
-            mediaPlayer.start();
+        btn_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.siren);
+                mediaPlayer.start();
+            }
         });
 
         setContentView(R.layout.activity_main);

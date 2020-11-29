@@ -14,6 +14,18 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_PoliceFragment"
+            app:destination="@id/PoliceFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/PoliceFragment"
+        android:name="com.example.oasis.PoliceFragment"
+        android:label="@string/police_fragment_label"
+        tools:layout="@layout/fragment_police">
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -22,4 +34,5 @@
         tools:layout="@layout/fragment_second">
 
     </fragment>
+
 </navigation>
